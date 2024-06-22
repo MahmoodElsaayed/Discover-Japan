@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'JP-Calligraphy';
+    src: url('./globalAssets/fonts/IPAMincho-Regular.ttf') format('truetype');
+}
+
+:root {
+    /* COLORS */
+    --white: #ffffff;
+    --black: #000000;
+    --semi-transparent-black: #00000041;
+    --gray: #808080;
+    --light-gray: #d3d3d3;
+    --dark-gray: #a9a9a9;
+
+    --red: #ff1f1f;
+    --dark-red: #8b0000;
+    --light-red: #e6b2b5;
+
+    --green: #008000;
+    --dark-green: #006400;
+    --light-green: #90ee90;
+
+    --blue: #0000ff;
+    --dark-blue: #00008b;
+    --light-blue: #add8e6;
+
+    --yellow: #ffff00;
+    --dark-yellow: #ffd700;
+    --light-yellow: #ffffe0;
+
+    --orange: #ffa500;
+    --dark-orange: #ff8c00;
+    --light-orange: #ffdab9;
+
+    --purple: #800080;
+    --dark-purple: #4b0082;
+    --light-purple: #dda0dd;
+
+    --pink: #ffc0cb;
+    --dark-pink: #ff69b4;
+    --light-pink: #ffb6c1;
+
+    --brown: #a52a2a;
+    --dark-brown: #654321;
+    --light-brown: #d2b48c;
+
+    /* FONTS */
+    --japanese-font: 'JP-Calligraphy';
+    --system-fonts: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    font-size: 62.5%;
+    font-family: var(--system-fonts);
+}
+
+body {
+    background: url('./globalAssets/images/background.jpg') no-repeat center center / cover;
+}
