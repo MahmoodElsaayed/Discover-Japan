@@ -1,0 +1,25 @@
+.contact-container {
+    display: flex;
+    width: fit-content;
+    padding: 80px;
+    border-radius: 5px;
+    background-color: var(--semi-transparent-black);
+}
+
+.info {
+    padding-left: 30px;
+    font: normal 1.6rem var(--system-fonts);
+    color: var(--white);
+}
+
+.info > div {
+    margin-bottom: 50px;
+}
+
+.info h1 {
+    margin-bottom: 15px;
+}
+
+.info p {
+    font-size: 1.8rem;
+}

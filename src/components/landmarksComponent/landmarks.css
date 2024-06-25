@@ -1,0 +1,45 @@
+.landmarks-container {
+    display: grid;
+    width: 70%;
+    padding: 80px;
+    border-radius: 5px;
+    background-color: var(--semi-transparent-black);
+}
+
+.landmark {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    font: normal 2rem var(--system-fonts);
+    line-height: 1.6;
+    color: var(--white);
+}
+
+.landmarks-container :nth-child(2) {
+    flex-flow: row-reverse;
+}
+
+.landmark+.landmark {
+    margin-top: 75px;   
+}
+
+.landmark-img {
+    flex: 0 0 350px;
+    height: 350px;
+    background-color: blue;
+    border-radius: 3px;
+}
+
+.landmark-img.landmark-1 {
+    background: url('./assets/images/fuji.jpg') no-repeat center center / cover;
+}
+.landmark-img.landmark-2 {
+    background: url('./assets/images/castle.jpg') no-repeat center center / cover;
+}
+.landmark-img.landmark-3 {
+    background: url('./assets/images/gate.jpg') no-repeat center center / cover;
+}
+ 
+.landmark h1 {
+    margin-bottom: 15px;
+}

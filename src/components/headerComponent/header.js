@@ -1,5 +1,8 @@
 import './header.css';
 import headerContent from './header.html';
+import homeContent from '../homeComponent/home.js';
+import landmarksContent from '../landmarksComponent/landmarks.js';
+import contactContent from '../contactComponent/contact.js';
 
 // Add Header To Index.html
 const header = document.createElement('header');
@@ -22,11 +25,11 @@ function navigationHandler() {
 
     function addPageContent(id) {
         if (id === 'home') {
-            main.innerHTML = 'Placeholder';
+            main.innerHTML = homeContent;
         } else if (id === 'landmarks') {
-            main.innerHTML = 'Placeholder';
+            main.innerHTML = landmarksContent;
         } else {
-            main.innerHTML = 'Placeholder';
+            main.innerHTML = contactContent;
         }
     }
 

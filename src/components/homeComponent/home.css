@@ -1,0 +1,41 @@
+.home-container>* {
+    text-align: center;
+    color: var(--white);
+}
+
+.home-container>p {
+    padding: 20px 0;
+}
+
+.jp-text {
+    font: 100 3rem var(--japanese-font);
+}
+
+.en-text {
+    border-top: 2px solid var(--white);
+    font: 100 2.5rem var(--system-fonts);
+    padding: 20px 0;
+
+    letter-spacing: 1.3px;
+    -webkit-transform: scaleY(0.95);
+    -moz-transform: scaleY(0.95);
+    -ms-transform: scaleY(0.95);
+    -o-transform: scaleY(0.95);
+    transform: scaleY(0.95);
+}
+
+.home-container button {
+    font-size: 1.8rem;
+    padding: 18px 28px;
+    border: 2px solid var(--white);
+    background-color: rgba(0, 0, 0, 0.15);
+    margin: 60px auto;
+    display: block;
+    transition: ease-in-out .3s;
+    cursor: pointer;
+}
+
+.home-container button:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
