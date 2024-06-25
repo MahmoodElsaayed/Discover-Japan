@@ -1,7 +1,7 @@
 .landmarks-container {
     display: grid;
     width: 70%;
-    padding: 80px;
+    padding: 60px;
     border-radius: 5px;
     background-color: var(--semi-transparent-black);
 }
@@ -10,8 +10,8 @@
     display: flex;
     align-items: center;
     gap: 50px;
-    font: normal 2rem var(--system-fonts);
-    line-height: 1.6;
+    font: normal 1.8rem var(--system-fonts);
+    line-height: 1.9;
     color: var(--white);
 }
 
@@ -20,7 +20,7 @@
 }
 
 .landmark+.landmark {
-    margin-top: 75px;   
+    margin-top: 75px;
 }
 
 .landmark-img {
@@ -33,13 +33,51 @@
 .landmark-img.landmark-1 {
     background: url('./assets/images/fuji.jpg') no-repeat center center / cover;
 }
+
 .landmark-img.landmark-2 {
     background: url('./assets/images/castle.jpg') no-repeat center center / cover;
 }
+
 .landmark-img.landmark-3 {
     background: url('./assets/images/gate.jpg') no-repeat center center / cover;
 }
  
 .landmark h1 {
     margin-bottom: 15px;
+}
+
+@media screen and (max-width: 1490px) {
+    .landmarks-container {
+        width: fit-content;
+        display: grid;
+        justify-items: center;
+    }
+
+    .landmark {
+        display: grid;
+        justify-items: center;
+        max-width: 80ch;
+        gap: 25px;
+    }
+
+    .landmark-img {
+        width: 100%;
+        height: 500px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .landmarks-container {
+        width: 100%;
+        padding: 30px;
+    }
+
+    .landmark {
+        font-size: 1.2rem;
+    }
+
+    .landmark-img {
+        height: 225px;
+    }
 }

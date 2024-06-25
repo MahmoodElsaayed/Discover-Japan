@@ -1,3 +1,7 @@
+.home-container {
+    margin-top: 50px;
+}
+
 .home-container>* {
     text-align: center;
     color: var(--white);
@@ -28,7 +32,7 @@
     font-size: 1.8rem;
     padding: 18px 28px;
     border: 2px solid var(--white);
-    background-color: rgba(0, 0, 0, 0.15);
+    background-color: #00000026;
     margin: 60px auto;
     display: block;
     transition: ease-in-out .3s;
@@ -38,4 +42,15 @@
 .home-container button:hover {
     background-color: rgba(255, 255, 255, 0.15);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (max-width: 768px) {
+    .jp-text {
+        font-size: 1.9rem;
+    }
+
+    .en-text,
+    button.en-text {
+        font-size: 1.4rem;
+    }
 }

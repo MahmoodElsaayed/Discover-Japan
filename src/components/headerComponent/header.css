@@ -11,20 +11,21 @@ header * {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px 0 30px 0;
+    padding: 20px 0;
 }
 
 .logo-text {
     display: inline-block;
     margin-right: -5px;
-    font: normal 6rem var(--japanese-font);
+    font: normal 4.8rem var(--japanese-font);
     color: white;
     text-shadow: 5px 5px 6px #00000087;
 }
 
 .logo-img {
-    width: 190px;
-    margin: 0 -60px 0 -19px;
+    width: 170px;
+    height: auto;
+    margin: 0 -60px 0 -20px;
 }
 
 nav {
@@ -35,13 +36,12 @@ nav {
 }
 
 nav button {
-    font: normal 2.3rem var(--system-fonts);
+    font: normal 2rem var(--system-fonts);
     color: white;
     background: none;
     border: 2px solid transparent;
-    padding: 1.9rem 2.2rem 2.3rem 2.2rem;
+    padding: 25px 20px;
     margin-bottom: -1px;
-    border-radius: 3px;
     transition: ease-in-out .2s;
     cursor: pointer;
 }
@@ -53,9 +53,28 @@ nav button:hover {
 }
 
 nav button {
-    -webkit-transform: scaleY(0.95);
-    -moz-transform: scaleY(0.95);
-    -ms-transform: scaleY(0.95);
-    -o-transform: scaleY(0.95);
-    transform: scaleY(0.95);
+    -webkit-transform: scaleY(0.93);
+    -moz-transform: scaleY(0.93);
+    -ms-transform: scaleY(0.93);
+    -o-transform: scaleY(0.93);
+    transform: scaleY(0.93);
+}
+
+@media screen and (max-width: 768px) {
+    .logo-text {
+        font-size: 3rem;
+    }
+
+    .logo-img {
+        width: 135px;
+    }
+
+    nav {
+        gap: 10px;
+    }
+
+    nav button {
+        font-size: 1.1rem;
+        padding: 5px 15px 20px 15px;
+    }
 }
