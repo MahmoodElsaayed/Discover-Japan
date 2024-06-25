@@ -32,7 +32,7 @@ module.exports = {
         },
       },
       {
-        test: /\.(png|svg|jpg|jpeg|gif|ico)$/i,
+        test: /\.(jpe?g|png|gif|svg)$/i,
         type: 'asset/resource',
         generator: {
           filename: 'assets/images/[name].[contenthash][ext]',
@@ -56,6 +56,8 @@ module.exports = {
         collapseWhitespace: true,
       },
     }),
-    new MiniCssExtractPlugin(),
+    new MiniCssExtractPlugin({
+      filename: 'main.[contenthash].css'
+    }),
   ],
 };
