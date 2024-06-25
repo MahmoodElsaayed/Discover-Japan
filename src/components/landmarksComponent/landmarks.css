@@ -29,15 +29,15 @@
 }
 
 .landmark-img.landmark-1 {
-    background: url('./assets/images/fuji.jpg') no-repeat center center / cover;
+    background: url('./assets/images/fuji.webp') no-repeat center center / cover;
 }
 
 .landmark-img.landmark-2 {
-    background: url('./assets/images/castle.jpg') no-repeat center center / cover;
+    background: url('./assets/images/castle.webp') no-repeat center center / cover;
 }
 
 .landmark-img.landmark-3 {
-    background: url('./assets/images/gate.jpg') no-repeat center center / cover;
+    background: url('./assets/images/gate.webp') no-repeat center center / cover;
 }
  
 .landmark h1 {
